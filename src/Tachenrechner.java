@@ -19,10 +19,10 @@ public class Tachenrechner extends JFrame {
 		this.setTitle("Calco");
 		this.setResizable(false);
 		this.setAlwaysOnTop(true);
-		
+		this.setLocationRelativeTo(null);
 		//Fenstergrösse
 		this.setSize(250, 280);
-		//this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		this.deaktierenalleB(pan, false);
 		
@@ -241,6 +241,12 @@ public class Tachenrechner extends JFrame {
 	public double arrondi(double nbr) {
 		return (double)((int)((nbr*100)+0.5))/100;
 		
+	}
+
+	public static void main(String[] args) {
+		SwingUtilities.invokeLater(()->{
+			new Tachenrechner();
+		});
 	}
 
 }
