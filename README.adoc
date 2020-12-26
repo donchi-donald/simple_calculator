@@ -1,0 +1,10 @@
+= simple_calculator
+
+This Programm was developed in Java with the IDE IntelJ.
+
+== How to run the application?
+* In the IDE: find `Tachenrechner.java` , right-click, select "Run Tachenrechner.main()
+
+
+== defauflt windows
+image:calco.png[]
